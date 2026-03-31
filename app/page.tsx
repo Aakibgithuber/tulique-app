@@ -5,6 +5,7 @@ import { ComboBoxes } from "@/components/home/combo-boxes";
 import { WhyChooseUs } from "@/components/home/why-choose-us";
 import { CustomerReviews } from "@/components/home/customer-reviews";
 import { InstagramGallery } from "@/components/home/instagram-gallery";
+import { Newsletter } from "@/components/home/newsletter";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <WhyChooseUs />
       <CustomerReviews />
       <InstagramGallery />
+      <Newsletter />
     </>
   );
 }
