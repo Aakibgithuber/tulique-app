@@ -1,1 +1,1 @@
-# tulique-app
+# tuliqe-app

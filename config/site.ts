@@ -1,18 +1,18 @@
 export const siteConfig = {
   brand: {
-    name: process.env.NEXT_PUBLIC_BRAND_NAME || "Tulique",
+    name: process.env.NEXT_PUBLIC_BRAND_NAME || "tuliqe",
     tagline: process.env.NEXT_PUBLIC_BRAND_TAGLINE || "Elegance Redefined",
-    description: "Discover exquisite handcrafted jewellery at Tulique. From traditional jhumkas to modern oxidised earrings and beautiful gift boxes.",
+    description: "Discover exquisite handcrafted jewellery at tuliqe. From traditional jhumkas to modern oxidised earrings and beautiful gift boxes.",
   },
   contact: {
     whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+919876543210",
-    email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@tulique.com",
+    email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@tuliqe.com",
     phone: process.env.NEXT_PUBLIC_PHONE_NUMBER || "+919876543210",
   },
   social: {
-    instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://instagram.com/tulique",
-    facebook: process.env.NEXT_PUBLIC_FACEBOOK_URL || "https://facebook.com/tulique",
-    pinterest: process.env.NEXT_PUBLIC_PINTEREST_URL || "https://pinterest.com/tulique",
+    instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://instagram.com/tuliqe",
+    facebook: process.env.NEXT_PUBLIC_FACEBOOK_URL || "https://facebook.com/tuliqe",
+    pinterest: process.env.NEXT_PUBLIC_PINTEREST_URL || "https://pinterest.com/tuliqe",
   },
   store: {
     address: process.env.NEXT_PUBLIC_ADDRESS || "123 Jewellery Lane, Fashion District, Mumbai 400001, India",

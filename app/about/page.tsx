@@ -34,7 +34,7 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2019", event: "Tulique was born from a passion for traditional Indian jewellery" },
+  { year: "2019", event: "tuliqe was born from a passion for traditional Indian jewellery" },
   { year: "2020", event: "Launched our first collection of handcrafted jhumkas" },
   { year: "2021", event: "Expanded to oxidised earrings and gift boxes" },
   { year: "2022", event: "Reached 5,000+ happy customers across India" },
@@ -73,7 +73,7 @@ export default function AboutPage() {
               <div className="aspect-[4/5] rounded-2xl overflow-hidden">
                 <Image
                   src="/images/about/about-hero.jpg"
-                  alt="Tulique craftsmanship"
+                  alt="tuliqe craftsmanship"
                   fill
                   className="object-cover"
                   priority
@@ -168,7 +168,7 @@ export default function AboutPage() {
             <div className="aspect-square rounded-2xl overflow-hidden max-w-md mx-auto lg:mx-0">
               <Image
                 src="/images/about/founder.jpg"
-                alt="Founder of Tulique"
+                alt="Founder of tuliqe"
                 width={500}
                 height={500}
                 className="object-cover w-full h-full"
