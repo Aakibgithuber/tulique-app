@@ -1,0 +1,251 @@
+import { Product, Review } from "@/types";
+
+export const products: Product[] = [
+  {
+    id: "1",
+    name: "Royal Kundan Jhumkas",
+    slug: "royal-kundan-jhumkas",
+    description: "Exquisite handcrafted Kundan jhumkas featuring intricate gold plating and precious stone work. Perfect for weddings and special occasions.",
+    price: 2499,
+    originalPrice: 3499,
+    images: ["/images/products/jhumka-1.jpg", "/images/products/jhumka-1-alt.jpg"],
+    category: "jhumkas",
+    tags: ["kundan", "wedding", "traditional"],
+    rating: 4.8,
+    reviewCount: 124,
+    inStock: true,
+    isBestSeller: true,
+    variants: [
+      { id: "v1", name: "Gold", inStock: true },
+      { id: "v2", name: "Rose Gold", inStock: true },
+      { id: "v3", name: "Silver", inStock: false },
+    ],
+  },
+  {
+    id: "2",
+    name: "Antique Oxidised Studs",
+    slug: "antique-oxidised-studs",
+    description: "Beautiful oxidised silver studs with antique finish. Lightweight and perfect for everyday wear.",
+    price: 799,
+    originalPrice: 999,
+    images: ["/images/products/oxidised-1.jpg", "/images/products/oxidised-1-alt.jpg"],
+    category: "oxidised-earrings",
+    tags: ["oxidised", "casual", "studs"],
+    rating: 4.6,
+    reviewCount: 89,
+    inStock: true,
+    isNew: true,
+  },
+  {
+    id: "3",
+    name: "Premium Gift Box - Bridal",
+    slug: "premium-gift-box-bridal",
+    description: "Complete bridal jewellery set in an elegant gift box. Includes jhumkas, necklace, bangles, and maang tikka.",
+    price: 8999,
+    originalPrice: 12999,
+    images: ["/images/products/giftbox-1.jpg", "/images/products/giftbox-1-alt.jpg"],
+    category: "gift-boxes",
+    tags: ["bridal", "complete-set", "gift"],
+    rating: 4.9,
+    reviewCount: 56,
+    inStock: true,
+    isBestSeller: true,
+  },
+  {
+    id: "4",
+    name: "Pearl Drop Jhumkas",
+    slug: "pearl-drop-jhumkas",
+    description: "Elegant pearl drop jhumkas with delicate gold detailing. A modern take on traditional design.",
+    price: 1899,
+    originalPrice: 2499,
+    images: ["/images/products/jhumka-2.jpg", "/images/products/jhumka-2-alt.jpg"],
+    category: "jhumkas",
+    tags: ["pearl", "elegant", "modern"],
+    rating: 4.7,
+    reviewCount: 78,
+    inStock: true,
+    isNew: true,
+  },
+  {
+    id: "5",
+    name: "Bohemian Oxidised Chandeliers",
+    slug: "bohemian-oxidised-chandeliers",
+    description: "Statement chandelier earrings in oxidised silver with bohemian tribal patterns.",
+    price: 1299,
+    originalPrice: 1799,
+    images: ["/images/products/oxidised-2.jpg", "/images/products/oxidised-2-alt.jpg"],
+    category: "oxidised-earrings",
+    tags: ["bohemian", "statement", "chandelier"],
+    rating: 4.5,
+    reviewCount: 67,
+    inStock: true,
+  },
+  {
+    id: "6",
+    name: "Festive Combo Set",
+    slug: "festive-combo-set",
+    description: "Curated festive jewellery combo with 3 pairs of earrings and 1 necklace set.",
+    price: 4499,
+    originalPrice: 6499,
+    images: ["/images/products/combo-1.jpg", "/images/products/combo-1-alt.jpg"],
+    category: "combo-sets",
+    tags: ["festive", "combo", "value"],
+    rating: 4.8,
+    reviewCount: 92,
+    inStock: true,
+    isBestSeller: true,
+  },
+  {
+    id: "7",
+    name: "Temple Jhumkas",
+    slug: "temple-jhumkas",
+    description: "Traditional South Indian temple jewellery jhumkas with goddess motifs and intricate craftsmanship.",
+    price: 3299,
+    originalPrice: 4299,
+    images: ["/images/products/jhumka-3.jpg", "/images/products/jhumka-3-alt.jpg"],
+    category: "jhumkas",
+    tags: ["temple", "south-indian", "traditional"],
+    rating: 4.9,
+    reviewCount: 145,
+    inStock: true,
+  },
+  {
+    id: "8",
+    name: "Minimalist Oxidised Hoops",
+    slug: "minimalist-oxidised-hoops",
+    description: "Simple yet elegant oxidised hoops for the minimalist jewellery lover.",
+    price: 599,
+    images: ["/images/products/oxidised-3.jpg", "/images/products/oxidised-3-alt.jpg"],
+    category: "oxidised-earrings",
+    tags: ["minimalist", "hoops", "everyday"],
+    rating: 4.4,
+    reviewCount: 52,
+    inStock: true,
+    isNew: true,
+  },
+  {
+    id: "9",
+    name: "Meenakari Choker Set",
+    slug: "meenakari-choker-set",
+    description: "Stunning Meenakari choker necklace with matching jhumkas in vibrant enamel colors.",
+    price: 5999,
+    originalPrice: 7999,
+    images: ["/images/products/necklace-1.jpg", "/images/products/necklace-1-alt.jpg"],
+    category: "necklaces",
+    tags: ["meenakari", "choker", "colorful"],
+    rating: 4.7,
+    reviewCount: 83,
+    inStock: true,
+  },
+  {
+    id: "10",
+    name: "Everyday Essentials Box",
+    slug: "everyday-essentials-box",
+    description: "A curated box of 5 versatile earring pairs perfect for daily wear.",
+    price: 2999,
+    originalPrice: 4499,
+    images: ["/images/products/giftbox-2.jpg", "/images/products/giftbox-2-alt.jpg"],
+    category: "gift-boxes",
+    tags: ["everyday", "essential", "gift"],
+    rating: 4.6,
+    reviewCount: 71,
+    inStock: true,
+    isNew: true,
+  },
+  {
+    id: "11",
+    name: "Silk Thread Bangles Set",
+    slug: "silk-thread-bangles-set",
+    description: "Colorful silk thread bangles set with stone embellishments. Set of 12 bangles.",
+    price: 1499,
+    originalPrice: 1999,
+    images: ["/images/products/bangles-1.jpg", "/images/products/bangles-1-alt.jpg"],
+    category: "bangles",
+    tags: ["silk-thread", "colorful", "set"],
+    rating: 4.5,
+    reviewCount: 64,
+    inStock: true,
+  },
+  {
+    id: "12",
+    name: "Polki Diamond Jhumkas",
+    slug: "polki-diamond-jhumkas",
+    description: "Luxurious Polki diamond jhumkas with uncut diamonds and gold plating.",
+    price: 6999,
+    originalPrice: 9999,
+    images: ["/images/products/jhumka-4.jpg", "/images/products/jhumka-4-alt.jpg"],
+    category: "jhumkas",
+    tags: ["polki", "diamond", "luxury"],
+    rating: 4.9,
+    reviewCount: 38,
+    inStock: true,
+    isBestSeller: true,
+  },
+];
+
+export const reviews: Review[] = [
+  {
+    id: "r1",
+    author: "Priya Sharma",
+    rating: 5,
+    comment: "Absolutely stunning jhumkas! The quality is exceptional and they look even better in person. Perfect for my sister's wedding.",
+    date: "2024-01-15",
+    verified: true,
+  },
+  {
+    id: "r2",
+    author: "Ananya Reddy",
+    rating: 5,
+    comment: "The oxidised earrings are so elegant and lightweight. I get compliments every time I wear them. Will definitely order more!",
+    date: "2024-01-10",
+    verified: true,
+  },
+  {
+    id: "r3",
+    author: "Meera Patel",
+    rating: 4,
+    comment: "Love the gift box! The packaging was beautiful and the jewellery quality is amazing. Great value for money.",
+    date: "2024-01-08",
+    verified: true,
+  },
+  {
+    id: "r4",
+    author: "Kavitha Nair",
+    rating: 5,
+    comment: "Tulique has become my go-to for all jewellery needs. The designs are unique and the service is excellent.",
+    date: "2024-01-05",
+    verified: true,
+  },
+  {
+    id: "r5",
+    author: "Deepika Rao",
+    rating: 5,
+    comment: "The combo set is perfect for festivals. Each piece is crafted beautifully. Highly recommend Tulique!",
+    date: "2024-01-02",
+    verified: true,
+  },
+];
+
+export function getProductBySlug(slug: string): Product | undefined {
+  return products.find((p) => p.slug === slug);
+}
+
+export function getProductsByCategory(category: string): Product[] {
+  return products.filter((p) => p.category === category);
+}
+
+export function getBestSellers(): Product[] {
+  return products.filter((p) => p.isBestSeller);
+}
+
+export function getNewArrivals(): Product[] {
+  return products.filter((p) => p.isNew);
+}
+
+export function getFeaturedProducts(): Product[] {
+  return products.slice(0, 6);
+}
+
+export function getRelatedProducts(productId: string, category: string): Product[] {
+  return products.filter((p) => p.id !== productId && p.category === category).slice(0, 4);
+}

@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: oklch(0.985 0.002 60);
+  --color-foreground: oklch(0.25 0.02 30);
+  --color-card: oklch(0.99 0.002 60);
+  --color-card-foreground: oklch(0.25 0.02 30);
+  --color-popover: oklch(0.99 0.002 60);
+  --color-popover-foreground: oklch(0.25 0.02 30);
+  --color-primary: oklch(0.55 0.12 25);
+  --color-primary-foreground: oklch(0.98 0.005 60);
+  --color-secondary: oklch(0.94 0.015 60);
+  --color-secondary-foreground: oklch(0.30 0.02 30);
+  --color-muted: oklch(0.96 0.008 60);
+  --color-muted-foreground: oklch(0.50 0.01 30);
+  --color-accent: oklch(0.85 0.08 45);
+  --color-accent-foreground: oklch(0.25 0.02 30);
+  --color-destructive: oklch(0.55 0.2 25);
+  --color-destructive-foreground: oklch(0.98 0.005 60);
+  --color-border: oklch(0.90 0.01 60);
+  --color-input: oklch(0.90 0.01 60);
+  --color-ring: oklch(0.55 0.12 25);
+  --radius: 0.625rem;
+
+  --font-sans: "Cormorant Garamond", serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-mono: ui-monospace, monospace;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: oklch(0.96 0.008 60);
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(0.75 0.05 25);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.55 0.12 25);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: oklch(0.85 0.08 45 / 0.3);
+  color: oklch(0.25 0.02 30);
+}
