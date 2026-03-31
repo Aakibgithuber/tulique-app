@@ -49,7 +49,7 @@ export function Newsletter() {
           </motion.div>
           
           <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-4 text-balance">
-            Join the {siteConfig.name} Family
+            Join the {siteConfig.brand.name} Family
           </h2>
           <p className="text-muted-foreground text-lg mb-8 text-pretty">
             Subscribe to receive exclusive offers, early access to new collections, 
